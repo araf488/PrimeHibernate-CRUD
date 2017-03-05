@@ -60,7 +60,8 @@
                         <p:inputText value="#{userMB.user.age}"/>
                         <p:outputLabel>Registration Date</p:outputLabel>
                         <p:calendar pattern="dd-MM-yyyy" value="#{userMB.user.dob}"/>
-                        <p:commandButton action="#{userMB.addUser()}" value="Save" 
+                        <p:outputLabel></p:outputLabel>
+                        <p:commandButton icon="ui-icon-plusthick" action="#{userMB.addUser()}" value="Save" 
                                          update="msg" ajax="false"></p:commandButton>
                     </p:panelGrid>
                 </h:form>
